@@ -14,7 +14,6 @@
   ecutrho 		    = 700
   ecutwfc 		    = 70
   ibrav 		    = 0
-  nbnd   		    = 30
   nat 			    = 3
   ntyp 			    = 2
   assume_isolated 	    = '2D'
@@ -24,6 +23,7 @@
 
 &ELECTRONS
   conv_thr    =   1.0000000000d-12
+  diagonalization = 'cg'
   mixing_beta =   0.4
 /
 
