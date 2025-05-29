@@ -1,0 +1,5 @@
+&INPUT
+  fildyn = 'MoSe2.dyn'
+  zasr   = 'crystal'
+  flfrc  = 'MoSe2.fc'
+/

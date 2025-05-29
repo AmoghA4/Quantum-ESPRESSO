@@ -1,0 +1,11 @@
+&INPUT
+  asr      = 'zero-dim',
+  dos      = .TRUE.,
+  flfrc    = 'MoSe2.fc',
+  flfrq    = 'MoSe2.dos.freq'
+  flvec    = 'MoSe2.dos.modes'
+  fldos    = 'MoSe2.dos.phdos',
+  nk1      = 75,
+  nk2      = 75,
+  nk3      = 75,
+/
