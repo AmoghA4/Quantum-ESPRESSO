@@ -10,11 +10,10 @@
 /
 
 &SYSTEM
-  degauss 		    = 0.005
+  degauss 		    = 0.01
   ecutrho 		    = 700
   ecutwfc 		    = 70
   assume_isolated 	    = '2D' 
-  nbnd   		    = 30 
   ibrav 		    = 0
   nat 			    = 3  
   ntyp 			    = 2
@@ -38,7 +37,7 @@ Se           0.6666666865       0.3333333433       0.3722223342
 Se           0.6666666865       0.3333333433       0.1277776807
 
 K_POINTS automatic
-20 20 2 0 0 0
+10 10 1 0 0 0
 
 CELL_PARAMETERS angstrom
       3.3222601414         0.0000000000         0.0000000000
