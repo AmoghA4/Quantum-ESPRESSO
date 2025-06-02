@@ -30,11 +30,11 @@ def data_loader(fname):
     return energy, pdos
 
 # Load data
-energy, Mo = data_loader('/home/amogh-a/Study Project/Unitcell/Pristine/Plots/Molybdenum_Contribution.dat')
-_, Se = data_loader('/home/amogh-a/Study Project/Unitcell/Pristine/Plots/Selenium_Contribution.dat')
-_, s = data_loader('/home/amogh-a/Study Project/Unitcell/Pristine/Plots/sOrbital_Contribution.dat')
-_, p = data_loader('/home/amogh-a/Study Project/Unitcell/Pristine/Plots/pOrbital_Contribution.dat')
-_, d = data_loader('/home/amogh-a/Study Project/Unitcell/Pristine/Plots/dOrbital_Contribution.dat')
+energy, Mo = data_loader('PATH TO/Molybdenum_Contribution.dat')
+_, Se = data_loader('PATH TO/Selenium_Contribution.dat')
+_, s = data_loader('PATH TO/sOrbital_Contribution.dat')
+_, p = data_loader('PATH TO/pOrbital_Contribution.dat')
+_, d = data_loader('PATH TO/dOrbital_Contribution.dat')
 
 # Shift energies by Fermi level
 energy_shifted = energy - fermi
@@ -72,7 +72,7 @@ ax.grid(True, linestyle='--', linewidth=0.4, alpha=0.4)
 ax.legend(loc='upper right', frameon=False)
 
 # Save figure
-plt.savefig('/home/amogh-a/Study Project/Unitcell/Pristine/Plots/Projected Density of States (PU).jpg',
+plt.savefig('PATH TO/Projected Density of States (PU).jpg',
             dpi=400, bbox_inches='tight', transparent=True)
 plt.close()
 
