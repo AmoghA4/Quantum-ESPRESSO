@@ -19,7 +19,7 @@ mpl.rcParams.update({
 })
 
 # Load band structure data
-data = np.loadtxt('/home/amogh-a/Study Project/Unitcell/Pristine/Plots/unitcell.bands.dat.gnu')
+data = np.loadtxt('   PATH TO    unitcell.bands.dat.gnu')
 k_values = data[:, 0]
 energies = data[:, 1]
 
@@ -69,7 +69,7 @@ ax.legend(loc="upper right", frameon=False)
 fig.suptitle("Electronic Band Structure of Pristine MoSe₂ Unitcell", fontsize=16, y=0.97)
 
 # Save figure
-plt.savefig('/home/amogh-a/Study Project/Unitcell/Pristine/Plots/Band Structure (PU).jpg',
+plt.savefig('/WHERE DO YOU WANNA SAVE',
             dpi=400, bbox_inches='tight', transparent=True)
 plt.close()
 
