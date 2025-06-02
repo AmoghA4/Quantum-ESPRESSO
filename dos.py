@@ -30,11 +30,11 @@ def data_loader(fname):
 fermi = -4.2181
 
 # Load data
-energy, Mo = data_loader('/home/amogh-a/Study Project/Unitcell/Pristine/Plots/Molybdenum_Contribution.dat')
-_, Se = data_loader('/home/amogh-a/Study Project/Unitcell/Pristine/Plots/Selenium_Contribution.dat')
-_, s = data_loader('/home/amogh-a/Study Project/Unitcell/Pristine/Plots/sOrbital_Contribution.dat')
-_, p = data_loader('/home/amogh-a/Study Project/Unitcell/Pristine/Plots/pOrbital_Contribution.dat')
-_, d = data_loader('/home/amogh-a/Study Project/Unitcell/Pristine/Plots/dOrbital_Contribution.dat')
+energy, Mo = data_loader('PATH TO/Molybdenum_Contribution.dat')
+_, Se = data_loader('PATH TO/Selenium_Contribution.dat')
+_, s = data_loader('PATH TO/Plots/sOrbital_Contribution.dat')
+_, p = data_loader('PATH TO/pOrbital_Contribution.dat')
+_, d = data_loader('PAHT TO/dOrbital_Contribution.dat')
 
 # Shift energies by Fermi level
 energy_shifted = energy - fermi
@@ -74,7 +74,7 @@ ax.legend(loc="upper right", frameon=False)
 #fig.suptitle("Density of States of Pristine MoSe₂ Unitcell", fontsize=16, y=0.97)
 
 # Save high-quality plot
-plt.savefig('/home/amogh-a/Study Project/Unitcell/Pristine/Plots/Density of States (PU).jpg',
+plt.savefig('WHERE DO YOU WANNA SAVE/Density of States (PU).jpg',
             dpi=400, bbox_inches='tight', transparent=True)
 plt.close()
 
