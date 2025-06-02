@@ -1,0 +1,53 @@
+ &CONTROL
+    calculation  = 'relax',
+    title 	 = 'Relax of MoSe2 Pristine Unitcell',
+    restart_mode = 'from_scratch',
+    prefix       = 'unitcell',
+    outdir       = './out/',
+    pseudo_dir   = './pseudo/',   
+    etot_conv_thr = 1.0E-6,
+    forc_conv_thr = 1.0D-6,
+    nstep        = 200
+ /
+
+&SYSTEM
+  ecutrho 		    = 700
+  ecutwfc 		    = 70
+  ibrav 		    = 0
+  nat 			    = 3
+  ntyp 			    = 2
+  occupations               = 'smearing'
+  degauss 		    = 0.01
+  smearing                  = 'gaussian'
+
+/
+
+&ELECTRONS
+    conv_thr    = 1e-10,
+    mixing_beta = 0.4,
+/
+
+&IONS
+    ion_dynamics = 'bfgs',
+/
+
+&CELL
+    cell_dynamics = 'bfgs'	
+/
+
+ATOMIC_SPECIES
+Mo     95.96  Mo.pbe-spn-kjpaw_psl.1.0.0.UPF
+Se     78.96  Se.pbe-n-kjpaw_psl.1.0.0.UPF
+
+CELL_PARAMETERS (angstrom)
+   3.331376651   0.000000000   0.000000000
+  -1.665688326   2.885056809   0.000000000
+   0.000000000   0.000000000   8.290760419
+
+ATOMIC_POSITIONS (crystal)
+Mo               0.3333333433        0.6666666865        0.2500000000
+Se               0.6666666865        0.3333333433        0.4499889313
+Se               0.6666666865        0.3333333433        0.0500110836
+ 
+K_POINTS automatic
+ 3 3 2   0 0 0

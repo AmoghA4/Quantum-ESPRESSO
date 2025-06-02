@@ -13,7 +13,7 @@
   degauss 		    = 0.01
   ecutrho 		    = 700
   ecutwfc 		    = 70
-  assume_isolated 	    = '2D' 
+  assume_isolated 	    = '2D'
   ibrav 		    = 0
   nat 			    = 3  
   ntyp 			    = 2
@@ -23,7 +23,6 @@
 
 &ELECTRONS
   conv_thr    =   1.0000000000d-12
-  diagonalization = 'cg'
   mixing_beta =   0.4
 /
 
@@ -31,15 +30,17 @@ ATOMIC_SPECIES
 Mo     95.96  Mo.pbe-spn-kjpaw_psl.1.0.0.UPF
 Se     78.96  Se.pbe-n-kjpaw_psl.1.0.0.UPF
 
-ATOMIC_POSITIONS crystal
-Mo           0.3333333433       0.6666666865       0.2500000000
-Se           0.6666666865       0.3333333433       0.3722223342
-Se           0.6666666865       0.3333333433       0.1277776807
+CELL_PARAMETERS (angstrom)
+   3.331376651   0.000000000   0.000000000
+  -1.665688326   2.885056809   0.000000000
+   0.000000000   0.000000000  15.290760419
+
+ATOMIC_POSITIONS (crystal)
+Mo               0.3333333433        0.6666666865        0.2500000000
+Se               0.6666666865        0.3333333433        0.4499903041
+Se               0.6666666865        0.3333333433        0.0500097108
 
 K_POINTS automatic
-10 10 1 0 0 0
+20 20 5 0 0 0
 
-CELL_PARAMETERS angstrom
-      3.3222601414         0.0000000000         0.0000000000
-     -1.6611300707         2.8771616804         0.0000000000
-      0.0000000000         0.0000000000        13.5429563522
+
