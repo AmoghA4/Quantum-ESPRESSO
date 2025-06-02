@@ -19,7 +19,7 @@ mpl.rcParams.update({
 })
 
 # Load and clean phonon dispersion data
-filepath = "/home/amogh-a/Study Project/Unitcell/Pristine/Plots/matdyn.freq.gp"
+filepath = "PATH TO/matdyn.freq.gp"
 clean_data = []
 
 with open(filepath, 'r') as f:
@@ -63,7 +63,7 @@ ax.grid(True, linestyle='-.', linewidth=0.4, alpha=0.5)
 fig.suptitle("Phonon Dispersion in Pristine MoSe₂ Unitcell", fontsize=16, y=0.97)
 
 # Save figure
-plt.savefig("/home/amogh-a/Study Project/Unitcell/Pristine/Plots/Phonon Dispersion (PU).jpg",
+plt.savefig("PATH TO/Phonon Dispersion (PU).jpg",
             dpi=400, bbox_inches='tight', transparent=True)
 plt.close()
 
