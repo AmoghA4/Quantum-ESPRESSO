@@ -20,7 +20,7 @@ mpl.rcParams.update({
 })
 
 # Load phonon DOS data
-freq, dos, pdos_Mo, pdos_Se, hi = np.loadtxt("/home/amogh-a/Study Project/Unitcell/Pristine/Plots/MoSe2.phdos", unpack=True)
+freq, dos, pdos_Mo, pdos_Se, hi = np.loadtxt("PATH TO/MoSe2.phdos", unpack=True)
 
 # Create figure
 fig, ax = plt.subplots(figsize=(12, 6), dpi=400)
@@ -47,7 +47,7 @@ ax.legend(loc='upper right', frameon=False)
 #fig.suptitle("Phonon Density of States in Pristine MoSe₂ Unitcell", fontsize=16, y=0.97)
 
 # Save figure
-plt.savefig("/home/amogh-a/Study Project/Unitcell/Pristine/Plots/Phonon DOS (PU).jpg",
+plt.savefig("PATH TO/Phonon DOS (PU).jpg",
             dpi=400, bbox_inches='tight', transparent=True)
 plt.close()
 
